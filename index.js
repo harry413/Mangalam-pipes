@@ -191,19 +191,32 @@
    open popup dialog box
    ============================================================ */
  const overlay = document.getElementById("overlay");
+ const overlayy = document.getElementById("overlayy");
 
   function openModal() {
     overlay.style.display = "flex";
+  }
+
+  function downloadData() {
+    overlayy.style.display = "flex";
   }
 
   function closeModal() {
     overlay.style.display = "none";
   }
 
+  function closeModall() {
+    overlayy.style.display = "none";
+  }
   // Close when clicking outside modal
   overlay.addEventListener("click", function(e) {
     if (e.target === overlay) {
       closeModal();
+    }
+  });
+   overlay.addEventListener("click", function(e) {
+    if (e.target === overlayy) {
+      closeModall();
     }
   });
 

@@ -227,16 +227,18 @@
         </div>
         <div class="overlay" id="overlay">
           <div class="modal" id="modal">
-            <span class="close-btn" onclick="closeModal()">×</span>
-            <h2>Let us email the entire catalogue to you</h2>
-
-            <label>Your Email *</label>
+            <span class="close-btn" onclick="closeModal()">X</span>
+            <h2>Request a call back</h2>
+            
+            <input type="text" id="name" placeholder="Enter your full name" />
+           
+            <input type="text" placeholder="Enter your company name" />
+           
             <input type="email" id="email" placeholder="example@gmail.com" />
 
-            <label>Your Contact (optional)</label>
             <input type="text" placeholder="+91-0000000000" />
 
-            <button class="download-btn" id="downloadBtn" disabled>
+            <button class="download-btn" id="downloadBtn" onclick="submitForm()">
               Submit Form
             </button>
           </div>
@@ -305,8 +307,23 @@
         </div>
 
         <div class="specs-cta">
-          <button class="btn-download" >⬇ Download Full Technical Datasheet</button>
+          <button class="btn-download" onclick="downloadData()">⬇ Download Full Technical Datasheet</button>
         </div>
+        <div class="overlayy" id="overlayy">
+          <div class="modall" id="modall">
+            <span class="close-btn" onclick="closeModall()">X</span>
+            <h2>Let's email the entire catalogue to you</h2>
+           
+            <input type="email" id="email" placeholder="example@gmail.com" />
+
+            <input type="text" placeholder="+91-0000000000" />
+
+            <button class="download-btnn" id="downloadBtnn" disabled>
+              Download Datasheet
+            </button>
+          </div>
+        </div>
+        
       </div>
       </div>
     </section>
